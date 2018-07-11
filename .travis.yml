@@ -4,8 +4,9 @@ node_js:
 install:
   - npm install -g firebase-tools
 after_success:
-  - npm i -g firebase-ci
-  - firebase-ci deploy
+#  - npm i -g firebase-ci
+#  - firebase-ci deploy
+  - firebase deploy
 branches:
   only:
     - master
